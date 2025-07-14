@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Chess Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Satranç Oyunu</h1>
+  <div>
+    <label for="difficulty">Zorluk:</label>
+    <select id="difficulty">
+      <option value="1">1 - Kolay</option>
+      <option value="2">2 - Basit</option>
+      <option value="3">3 - Orta</option>
+      <option value="4">4 - Zor</option>
+      <option value="5">5 - Çok Zor</option>
+    </select>
+    <button id="start-btn">Oyunu Başlat</button>
+  </div>
+  <div id="main-container">
+    <div class="captured-panel">
+      <div class="captured-title">Beyazın Aldığı</div>
+      <div id="captured-black" class="captured-list"></div>
+    </div>
+    <div>
+      <div id="chess-board"></div>
+    </div>
+    <div class="captured-panel">
+      <div class="captured-title">Siyahın Aldığı</div>
+      <div id="captured-white" class="captured-list"></div>
+    </div>
+  </div>
+  <script src="chess-engine.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 
